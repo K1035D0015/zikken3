@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="327.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="schedule.FXMLDocumentController">
+   <children>
+      <Slider layoutX="297.0" layoutY="88.0" orientation="VERTICAL" prefHeight="336.0" prefWidth="16.0" />
+      <Slider layoutX="2.0" layoutY="80.0" prefHeight="16.0" prefWidth="302.0" />
+      <Separator layoutX="66.0" layoutY="107.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="7.0" />
+      <TabPane layoutX="11.0" layoutY="43.0" prefHeight="366.0" prefWidth="283.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="1/20" />
+            <Tab text="1/21">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="1/22">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="1/23">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="1/24">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="1/25">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
