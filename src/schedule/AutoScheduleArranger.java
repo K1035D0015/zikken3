@@ -10,5 +10,16 @@ package schedule;
  * @author baseball
  */
 public class AutoScheduleArranger {
+    public boolean addSchedule(){
+        return false;        
+    }
+    
+    public boolean updateProgress(){
+        return false;        
+    }
+    
+    public boolean deteteSchedule(){
+        return false;       
+    }
     
 }
