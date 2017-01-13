@@ -5,10 +5,26 @@
  */
 package schedule;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author baseball
  */
 public class ScheduleDatebaseHandler {
-    
+    public boolean add(){
+        return false;        
+    }
+    public boolean delete(int scheduleID){
+        return false;        
+    }
+    public ArrayList get(){   
+        return null;
+    }
+    public boolean update(Schedule schedule){
+        return false;        
+    }
+    public Schedule get(int scheduleID){
+        return null;
+    }
 }
