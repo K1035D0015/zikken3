@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author o231035k
  */
-public class Schedule extends Application {
+public class ScheduleListScreen extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
