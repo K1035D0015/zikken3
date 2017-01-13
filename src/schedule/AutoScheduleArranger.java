@@ -22,9 +22,18 @@ public class AutoScheduleArranger {
     Schedule s1 = new Schedule(); //受け取るスケジュール
     Schedule s2 = new Schedule(); //参照するスケジュール
     
+    
     //時間を進める関数
-    void manageTime(){
-        cal.add(Calendar.MINUTE, 1);
+    int manageTime(){
+        int dec = 0;
+            ;
+            while(dec == 1){
+            s2 = new Schedule(); //進めた時間のスケジュールを参照
+            cal.add(Calendar.MINUTE, 1);
+            if(s2.startTimeB.equals(cal))
+                dec = 1;
+            }
+        return 0;
     }
     
     //優先順位比較関数
@@ -36,12 +45,26 @@ public class AutoScheduleArranger {
         return false;       
     }
     
-    void autoSchedule(){ //スケジュール自動設定処理関数
-        boolean comparePriority = comparePriority(s1,s2); //比較
+    void autoSchedule(Schedule s1, Schedule s2){ //スケジュール自動設定処理関数
+        
+        int dec = 0;
+        
+        while(dec == 1){
+            boolean cmp = comparePriority(s1,s2); //比較
+            if(cmp){
+            //スケジュールを当てはめる
+                dec = 1; //全てのスケジューリングが終了すれば終わり
+            }
+            else{
+            //参照先を変える
+                manageTime();
+            }
+        }
     }
     
     //スケジュール追加関数
     public void addSchedule(){
+        autoSchedule(Schedule s1, Schedule s2);
         //ScheduleDatebaseHandlerのadd関数を呼ぶ
     }
     
