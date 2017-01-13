@@ -27,11 +27,6 @@ public class ScheduleListScreen extends Application {
         stage.show();
     }
 
-    class Schedule {
-    
-    }
-
-    
     /**
      * @param args the command line arguments
      */
