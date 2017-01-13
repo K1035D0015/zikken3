@@ -10,6 +10,9 @@ package schedule;
  * @author baseball
  */
 public class AutoScheduleArranger {
+    public boolean Priority(){
+        return false;       
+    }
     public boolean addSchedule(){
         return false;        
     }
