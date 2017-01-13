@@ -22,6 +22,5 @@ public class Schedule {
     public Calendar deadline;   //締め切り時刻
     public String title;        //スケジュールの名前
     public String explanation;  //スケジュールの説明
-
     
 }

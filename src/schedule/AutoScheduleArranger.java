@@ -5,8 +5,12 @@
  */
 package schedule;
 
+import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import static jdk.nashorn.internal.objects.NativeFunction.call;
 
 
 /**
@@ -14,33 +18,31 @@ import java.util.List;
  * @author baseball
  */
 public class AutoScheduleArranger {
-    private Object a;
-    List = new ArrayList;
+    Calendar cal = Calendar.getInstance(); //現在時間の取得
+    Schedule s1 = new Schedule(); //受け取るスケジュール
+    Schedule s2 = new Schedule(); //参照するスケジュール
     
-    //スケジュール取得関数
-    void acquisition(){
-        //各方面から送られたスケジュールを習得する
-                
-    }       
-    
-    //データベーススケジュール取得関数
-    void getSchedule(){
-        //データベースからスケジュールを取得する
-        
+    //時間を進める関数
+    void manageTime(){
+        cal.add(Calendar.MINUTE, 1);
     }
     
     //優先順位比較関数
-    boolean Priority(){
+    boolean comparePriority(Schedule s1, Schedule s2){
         //2つのスケジュールを比較して、優先順位の高いものを採用する。
-        if( a.compare(i,j) == 0)
-            return false;
+        int cmp = s2.compareTo(s1);
+        if(cmp >= 0)
+            return true;
         return false;       
     }
     
+    void autoSchedule(){ //スケジュール自動設定処理関数
+        boolean comparePriority = comparePriority(s1,s2); //比較
+    }
+    
     //スケジュール追加関数
-    public boolean addSchedule(){
+    public void addSchedule(){
         //ScheduleDatebaseHandlerのadd関数を呼ぶ
-        return false;        
     }
     
     //進捗更新関数
