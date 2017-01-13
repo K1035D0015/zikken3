@@ -15,6 +15,10 @@ public class Schedule {
     
     public boolean isEvent; //TrueならEvent、FalseならTask
     public Calendar startTimeB; //開始時間(ユーザーが設定した時間)
-    public Calendar 
+    public Calendar endTimeB;   //終了時間（ユーザーが設定した時間）
+    public Calendar startTimeA; //開始時間(システムが設定した時間)
+    public Calendar endTimeA;   //終了時間（システムが設定した時間）
+    
+    
     
 }
