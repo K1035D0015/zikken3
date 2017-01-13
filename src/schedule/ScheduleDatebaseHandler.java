@@ -12,11 +12,11 @@ import java.util.ArrayList;
  * @author baseball
  */
 public class ScheduleDatebaseHandler {
-    public boolean add(){
+    public boolean add(Schedule shedule){
         return false;        
     }
     public boolean delete(int scheduleID){
-        return false;        
+        return false;
     }
     public ArrayList get(){   
         return null;
