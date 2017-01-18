@@ -29,8 +29,8 @@ public class Schedule {
     public String title;        //スケジュールの名前
     public String explanation;  //スケジュールの説明
 
-    public boolean notification;
-    public int scheduleID;
+    public boolean notification;    //通知の有無
+    public int scheduleID;      //スケジュールID（ユニークなID）
     
     public int priority; //スケジュールの優先順位
 
